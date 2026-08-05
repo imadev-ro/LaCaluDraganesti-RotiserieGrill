@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Calu – Rotiserie prietenoasă din Drăgănești | Pui la rotisor & grill</title>
+    <meta name="description" content="La Calu este o rotiserie de familie din Drăgănești, Prahova. Pui la rotisor, grill, mici și preparate gătite zilnic, cu gust autentic.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FIXURI DOAR PENTRU HOME -->
+    <style>
+        @media (max-width: 768px) {
+            .hero {
+                height: auto;
+                min-height: 320px;
+                padding: 30px 15px;
+            }
+
+            .hero-content {
+                padding: 0;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 15px;
+            }
+
+            .hero-buttons .btn {
+                min-width: 220px;
+                padding: 14px 0;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 30px 15px;
+            }
+
+            .final-cta {
+                padding: 30px 15px;
+            }
+        }
+
+        .mobile-only { display: none; }
+        .always-show { display: inline-block; }
+
+        @media (max-width: 500px) {
+            .mobile-only { display: inline-block; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🐎 RotiserieGrill „La Calu” Drăgănești</div>
+
+    <nav id="nav">
+        <a href="index.html" class="active">Acasă</a>
+        <a href="meniu.html">Meniu</a>
+        <a href="despre.html">Despre</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">☰</div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Prezentare rotiserie">
+        <video autoplay muted loop playsinline preload="none" class="hero-video" poster="imagini/hero-fallback.jpg">
+            <source src="videos/Home_video.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1>Pui la rotisor & grill autentic</h1>
+            <p>Gătit zilnic cu grijă • Gust tradițional • Pentru toată familia</p>
+
+            <div class="hero-buttons">
+                <a href="tel:+40731825180" class="btn btn-outline mobile-only">📞 Sună acum</a>
+                <a href="https://wa.me/40731825180" class="btn btn-outline always-show">💬 WhatsApp</a>
+                <a href="meniu.html" class="btn btn-outline">Vezi meniul</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DE CE LA CALU -->
+    <section class="section why-us" aria-label="De ce să ne alegi">
+        <h2>De ce La Calu?</h2>
+
+        <div class="why-grid">
+            <div class="why-card">🔥 Gătit zilnic pe rotisor</div>
+            <div class="why-card">🥩 Carne proaspătă, atent aleasă</div>
+            <div class="why-card">👨‍👩‍👧 Afacere de familie</div>
+            <div class="why-card">⭐ Recomandat de clienți locali</div>
+        </div>
+    </section>
+
+    <!-- MENIURI POPULARE -->
+    <section class="section" aria-label="Preparate populare">
+        <h2>Printre preferințele celor care ne trec pragul</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="badge">🔥 Popular</div>
+                <img src="imagini/Home/Platouri personalizate.jpeg" alt="Platouri personalizate La Calu" loading="lazy">
+                <h3>Platouri personalizate</h3>
+                <p class="descriere">Platouri bogate cu pui, mici, cârnați și garnituri proaspete.</p>
+            </div>
+
+            <div class="card">
+                <div class="badge">⭐ Recomandat</div>
+                <img src="imagini/Home/ciolan.jpeg" alt="Ciolan de porc rotisat" loading="lazy">
+                <h3>Ciolan de porc</h3>
+                <p class="descriere">Gătit încet, cu aromă intensă.</p>
+            </div>
+
+            <div class="card">
+                <div class="badge">🔥 Popular</div>
+                <img src="imagini/Home/mici.jpeg" alt="Mici românești" loading="lazy">
+                <h3>Mici românești</h3>
+                <p class="descriere">Suculenți, serviți fierbinți.</p>
+            </div>
+
+            <div class="card">
+                <div class="badge">✨ Clienții aleg</div>
+                <img src="imagini/Home/Clatite_home.jpeg" alt="Clătite de casă" loading="lazy">
+                <h3>Clătite delicioase</h3>
+                <p class="descriere">Dulci și aromate.</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top:25px;">
+            <a href="meniu.html" class="btn">Vezi tot meniul</a>
+        </div>
+    </section>
+
+    <!-- LOCAȚIE -->
+    <section class="section location-section" aria-label="Locație și program">
+        <h2>Ne găsești în Drăgănești, Prahova</h2>
+        <p>📍 Strada Principală 39, sat Drăgănești</p>
+        <p>⏰ Luni – Duminică: 10:00 – 21:00</p>
+        <p>📞 <a href="tel:+40731825180">0731 825 180</a></p>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section final-cta" aria-label="Comandă rapid">
+        <h2>Ți-e poftă?</h2>
+        <p>Sună-ne sau scrie-ne pe WhatsApp și rezolvăm rapid.</p>
+
+        <a href="tel:+40731825180" class="btn mobile-only">📞 Sună acum</a>
+        <a href="https://wa.me/40731825180" class="btn btn-outline always-show">💬 WhatsApp</a>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 La Calu | Rotiserie autentică
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
